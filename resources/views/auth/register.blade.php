@@ -59,7 +59,7 @@
                       @enderror
                   </div>
 
-                  <div class="col-12">
+                  {{-- <div class="col-12">
                     <label for="roles" class="form-label">Daftar Sebagai</label>
                     <select class="form-select" aria-label="Default select example">
                         <option value="pasien">Pasien</option>
@@ -70,7 +70,7 @@
                               <p>{{ $message }}</p>
                           </span>
                       @enderror
-                  </div>
+                  </div> --}}
 
                 <div class="col-12">
                   <button class="btn btn-primary w-100 mb-2" type="submit">Daftar</button>

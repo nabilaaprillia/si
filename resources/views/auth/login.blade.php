@@ -15,18 +15,18 @@
                 <h5 class="card-title text-center pb-0 fs-4">LOGIN</h5>
               </div>
 
-              
+
                 @if(session()->has('success'))
                     <div class="alert alert-success alert-dismissible fade show" role="alert"> {{ session('success') }}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                @endif  
+                @endif
 
                 @if(session()->has('pending'))
                     <div class="alert alert-warning alert-dismissible fade show" role="alert"> {{ session('pending') }}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                @endif  
+                @endif
 
               <form class="row g-3 needs-validation" action="{{ route('login') }}" method="post" novalidate>
                 @csrf
@@ -51,7 +51,7 @@
                     @enderror
                 </div>
 
-                <div class="col-12">
+                {{-- <div class="col-12">
                   <label for="roles" class="form-label">Login Sebagai</label>
                   <select class="form-select" aria-label="Default select example" name="roles">
                       <option value="pasien">Pasien</option>
@@ -62,7 +62,7 @@
                             <p>{{ $message }}</p>
                         </span>
                     @enderror
-                </div>
+                </div> --}}
 
                 <div class="col-12">
                   <button class="btn btn-primary w-100" type="submit">Masuk</button>

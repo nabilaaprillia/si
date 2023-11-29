@@ -33,7 +33,7 @@ Route::get('livewire/antrian/cetakAntrian', [FrontAntrianController::class, 'cet
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('redirectifauthenticated');
 Route::get('dashboard', [DashboardController::class, 'index']);
-Route::get('dashboard', 'AdminController@dashboard')->name('admin.dashboard');
+// Route::get('dashboard', 'AdminController@dashboard')->name('admin.dashboard');
 
 
 Route::get('dashboard/antrian/poliUmum', [DashboardAntrianController::class, 'indexPoliUmum']);
