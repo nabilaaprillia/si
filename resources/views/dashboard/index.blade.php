@@ -30,7 +30,7 @@
                                     <i class="bx bxs-group"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h6>{{ $totalAntrian }}</h6>          
+                                    {{-- <h6>{{ $totalAntrian }}</h6>           --}}
                                 </div>
                                 </div>
                             </div>
